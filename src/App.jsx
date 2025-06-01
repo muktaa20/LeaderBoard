@@ -50,7 +50,7 @@ const newPlayer = {
 
   return (
     <div className="container">
-      <h1>🏆Championship Leaderboard🏆</h1>
+      <h1>🏆Leaderboard🏆</h1>
       <div className="form">
         <input type="text" name="firstName" placeholder="First Name" value={form.firstName} onChange={handleChange} />
         <input type="text" name="lastName" placeholder="Last Name" value={form.lastName} onChange={handleChange} />

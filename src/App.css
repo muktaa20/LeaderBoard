@@ -23,8 +23,10 @@ body {
 }
 
 h1 {
+  padding-bottom: 25px;
+  padding-top: 0;
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   margin-bottom: 1.5rem;
   color: #333;
 }
@@ -56,7 +58,6 @@ h1 {
   font-weight: bold;
   transition: background 0.3s;
 }
-
 .add-btn:hover {
   background: linear-gradient(45deg, #6a0dad, #3a00d0);
 }
@@ -100,7 +101,19 @@ h1 {
   font-weight: bold;
   font-size: 0.9rem;
 }
-
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header,
+.player {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1fr 2fr; /* this is okay */
+  gap: 1rem;
+  align-items: center;
+}
 .plus {
   background-color: whitesmoke;
   color: #065d1a;

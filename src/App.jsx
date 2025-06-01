@@ -50,7 +50,7 @@ const newPlayer = {
 
   return (
     <div className="container">
-      <h1>🏆 Leaderboard</h1>
+      <h1>🏆Championship Leaderboard🏆</h1>
       <div className="form">
         <input type="text" name="firstName" placeholder="First Name" value={form.firstName} onChange={handleChange} />
         <input type="text" name="lastName" placeholder="Last Name" value={form.lastName} onChange={handleChange} />
@@ -77,10 +77,10 @@ const newPlayer = {
             <span>{player.name}</span>
             <span>{player.country}</span>
             <span>{player.score}</span>
-            <span>
+            <span className="actions">
               <button className="plus" onClick={() => increaseScore(player.id)}>+1</button>
               <button className="minus" onClick={() => decreaseScore(player.id)}>-1</button>
-              <button className="delete" onClick={() => deletePlayer(player.id)}>Delete</button>
+              <button className="delete" onClick={() => deletePlayer(player.id)}>🚫</button>
             </span>
           </div>
         ))}
